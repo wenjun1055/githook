@@ -22,6 +22,11 @@ $httpServerObj->set($aServerSetting);
 $httpServerObj->on('request', function(swoole_http_request $request, swoole_http_response $response) {
     var_dump($request);
 });
-$httpServerObj->on('Task', '\Action\Tasker::task');
+$httpServerObj->on('Task', function(swoole_server $serverObj, $taskId, $fromId, $data) {
+    return true;
+});
+$httpServerObj->on('Finish', function(swoole_server $serverObj, $taskId, $data) {
+    return true;
+});
 $httpServerObj->start();
 
