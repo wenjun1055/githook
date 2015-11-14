@@ -21,3 +21,8 @@ $aServerSetting = array(
     'task_ipc_mode'       => 3,
     'log_file'            => WORKSPACE . DS . 'logs/swoole.log',
 );
+
+
+$aRepoConfig = array(
+    'test' => '/bin/sh ' . WORKSPACE . DS . 'scripts' . DS . 'test.sh',
+);
