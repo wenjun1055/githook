@@ -30,5 +30,5 @@ $aWhiteIpList = array(
 
 //每个uri对应的脚本
 $aRepoConfig = array(
-    'test' => '/bin/sh ' . WORKSPACE . DS . 'scripts' . DS . 'test.sh',
+    'test' => '/bin/sh ' . WORKSPACE . DS . 'scripts' . DS . 'test.sh >> ' . WORKSPACE . DS . 'logs/git.log',
 );
