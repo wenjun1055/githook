@@ -8,7 +8,7 @@ Github/Bitbucket/OSC Webhook Tools
 # 用法
 
 ```
-php server.php
+sh server.sh start
 ```
 
 这样就启动 githook 服务器了。其中各种配置都在config.php文件中
