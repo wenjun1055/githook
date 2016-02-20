@@ -2,7 +2,7 @@
 /**
  * @Author: WenJun
  * @Date  :   15/11/14 17:09
- * @Email :  wenjun01@baidu.com
+ * @Email :  wenjun1055@gmail.com
  * @File  :   config.php
  * @Desc  :   ...
  */
@@ -10,6 +10,12 @@
 //服务监听的IP和端口
 define('SERVER_LISTEN_IP', '0.0.0.0');
 define('SERVER_LISTEN_PORT', 9876);
+//rename进程名
+define('MASTER_PROCESS_NAME', 'githook: master');
+define('MANAGER_PROCESS_NAME', 'githook: manager');
+define('WORKER_PROCESS_NAME', 'githook: worker %d');
+define('TASKER_PROCESS_NAME', 'githook: tasker: %d');
+
 
 //server setting
 $aServerSetting = array(
